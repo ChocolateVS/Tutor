@@ -1,0 +1,139 @@
+body, html {
+   
+    height:100%;
+    margin:0;
+    padding:0;
+}
+.bgImage {
+    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3) ), url(../images/background.jpg);
+    
+    height: 100%;
+    
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#bodyText, #headerText {
+    
+}
+h1.text {
+    font-size: 2.25vw;
+}
+
+p.text {
+    font-size: 1vw;
+}
+#bodyText {   
+    /*background-color: rgba(0,0,0, 0.3);
+    border: 3px solid #f1f1f1; */
+    font: 16px/1.5 "Dosis", sans-serif;
+    color: aliceblue;
+    font-weight: bold;
+    position: absolute;
+    top: 37%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    overflow: hidden;
+    top:0;
+    position: fixed;
+    display: inline;
+    border-bottom:3px solid gray;
+    width:90%;
+    left:50%;
+    z-index: 99999;
+    transform: translate(-50%, 0%);
+    transition-duration: 0.5s;
+}
+#navBar:hover {
+    border-bottom:3px solid white;
+    transition-duration: 0.5s;
+}
+
+a {
+    vertical-align: middle;
+    text-decoration: none;
+    font: 16px/1.5 "Dosis", sans-serif;
+    font-size:2vw;
+    color:white;
+}
+.container {
+    vertical-align: middle;
+}
+#logo {
+    transform: translate(0%, 50%); 
+    display:inline;
+    position: relative;
+    left:0;
+}
+#logoImg {
+    width:16vw;
+}
+ul, li {
+    display: inline;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#discordImg:hover {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+#discordImg {
+    width:3.5vw;
+    height:3.5vw;
+    border-radius: 50%;  
+    -webkit-transition: -webkit-transform .4s ease-in-out;
+    transition: transform .4s ease-in-out;
+}
+#discord {
+    float:right;
+    display:inline;
+    position: relative;
+    transform: translate(0%, 50%);  
+}
+
+#options {
+    display:inline;
+}
+
+#button {
+    font: 16px/1.5 "Dosis", sans-serif;
+    font-size:20px;
+    color: aliceblue;
+    font-weight: bold;
+    background-color: rgba(251, 47, 56, 1);
+    width: 230px;
+    border: none;
+    display: inline;
+    padding:16px;
+    border-radius:5px;  
+    transition-duration: 0.4s;
+}
+
+#button:hover {
+    background-color: rgba(251, 20, 56, 1);
+    transition-duration: 0.4s;
+}
+a#learn {
+    padding-left: 20px;
+    font-size:25px;
+    text-decoration: underline;
+}
+@keyframes slideInFromLeft {
+    0% {
+    transform: translateX(-50%);
+    }
+    100% {
+    transform: translateX(0);
+    }
+}
