@@ -1,151 +1,123 @@
-body, html {
-    height:100%;
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Dosis", sans-serif;
 }
-/* Background */
-.bgImage {
-    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3) ), url(../images/background.jpg);
+
+#background {
+    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3) ), url(/assets/images/background.jpg);
     
-    height: 100%;
+    height: 100vh;
     
     filter: blur(5px);
-    -webkit-filter: blur(5px);
     
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
-/* NAVBAR */
-div#navBar {
-    overflow: hidden;
-    top:0;
+main {
     position: fixed;
-    display: flex;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+nav {
+    position: relative;
+    display: block;
+    height: 10vh;
+    width: 80vw;
+    margin: auto;
+    font-weight: bolder;
+    padding: 1rem;
     border-bottom:3px solid rgba(255, 255, 255, 0.2);
-    width:90%;
-    height: 10%;
-    left:50%;
-    z-index: 99999;
-    transform: translate(-50%, 0%);
     transition-duration: 0.5s;
+
 }
 
-#navBar:hover { 
+nav:hover {
+    transition-duration: 0.5s;
     border-bottom:3px solid white;
-    transition-duration: 0.5s;
 }
 
-.container {
-    vertical-align: middle;
-    max-width:100%;
-    max-height:100%;
+nav div {
+    display: flex;
+    align-items: center;
     height: 100%;
-    width: 100%;
-}
-
-/* LOGO */
-#logo {
-    transform: translate(0%, 50%); 
-    display:inline;
-}
-#logoImg {
-    max-width:100%;
-    max-height: 100%;
-}
-/*NAVBAR right items */
-
-.nav-right {
     float: right;
-    display:inline;
 }
 
-a {
-    vertical-align: middle;
+nav div a{
+    margin-right: 1rem;
+    color: white;
     text-decoration: none;
-    font: 16px/1.5 "Dosis", sans-serif;
-    font-size:2vw;
-    color:white;
+}
+
+nav img {
+    display: inline-block;
+    height: 100%;
+}
+
+
+
+
+#discordImg {
+    height: 100%;
+    transition:transform .4s ease-in-out;
+}
+
+
+#discordImg img {
+    height: 100%;
 }
 
 /* Discord Image Link */
 #discordImg:hover {
-  -webkit-transform: rotate(360deg);
-  transform: rotate(360deg);
-}
-#discordImg {
-    width:10%;
-    max-width: 10%;
-    max-height: 10%;
-    border-radius: 50%;  
-    -webkit-transition: -webkit-transform .4s ease-in-out;
-    transition: transform .4s ease-in-out;
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
 }
 
-/* Tutorial Link */
-a#tutorial {
-    font-size: 2em;
-    padding: 3px;
-    text-align: center;
-    text-decoration: none;
-    border-radius:3px;
-    border: 1px solid aliceblue;
-}
-
-
-
-
-/* Main Text Segment */
-h1.text {
-    font-size: 35px;
-}
-
-p.text {
-    font-size: 20px;
-}
-
-#bodyText {   
-    font: 16px/1.5 "Dosis", sans-serif;
-    color: aliceblue;
-    font-weight: bold;
+section {
     position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    width: 80%;
-    padding: 20px;
+    top: 30%;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
+    color: white;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    font-size: 1.25rem;
+    font-weight: bolder;
 }
 
-/* Learn more and button options */
-#options {
-    display:inline;
+section div {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 3rem;
 }
-/* Get Started Button */
-#button {
-    font: 16px/1.5 "Dosis", sans-serif;
-    font-size:20px;
-    color: aliceblue;
-    font-weight: bold;
-    background-color: rgba(251, 47, 56, 1);
-    width: 230px;
-    border: none;
-    display: inline;
-    padding:16px;
-    border-radius:5px;  
+
+section div a{
+    color: white;
+}
+
+section div a:nth-child(1) {
+    text-decoration: none;
+    padding: 1rem 3rem;
+    margin: 1rem;
+    background-color: #fb2f38;
+    border-radius: 8px;
     transition-duration: 0.4s;
 }
 
-#button:hover {
+section div a:nth-child(1):hover {
     background-color: rgba(251, 20, 56, 1);
     transition-duration: 0.4s;
 }
 
-/* Learm more link */
-a#learn {
-    padding-left: 20px;
-    font-size:25px;
-    text-decoration: underline;
+section h1, section p {
+    padding: 1rem;
 }
