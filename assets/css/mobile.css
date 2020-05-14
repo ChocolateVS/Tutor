@@ -6,11 +6,14 @@
 }
 
 .link {
+    display: none;
+}
+/*.link {
     font-size: 15px;
     padding: 6px;
     border-radius: 3px;
     border: 1px solid aliceblue;
-}
+}*/
 
 #background {
     background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3) ), url(../images/background.jpg);
@@ -68,9 +71,6 @@ nav img {
     height: 100%;
 }
 
-
-
-
 #discordImg {
     height: 100%;
     transition:transform .4s ease-in-out;
@@ -89,7 +89,7 @@ nav img {
 
 section {
     position: absolute;
-    top: 30%;
+    top: 22%;
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -118,6 +118,7 @@ section div a:nth-child(1) {
     background-color: #fb2f38;
     border-radius: 8px;
     transition-duration: 0.4s;
+    display: block;
 }
 
 section div a:nth-child(1):hover {
@@ -127,4 +128,11 @@ section div a:nth-child(1):hover {
 
 section h1, section p {
     padding: 1rem;
+}
+p {
+    font-size:1rem;
+}
+
+h1 {
+    font-size:1.5rem;
 }
