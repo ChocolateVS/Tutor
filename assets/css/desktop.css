@@ -1,9 +1,9 @@
 body, html {
-   
     height:100%;
     margin:0;
     padding:0;
 }
+/* Background */
 .bgImage {
     background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3) ), url(../images/background.jpg);
     
@@ -16,9 +16,93 @@ body, html {
     background-size: cover;
     background-position: center;
 }
-#bodyText, #headerText {
-    
+
+/* NAVBAR */
+div#navBar {
+    overflow: hidden;
+    top:0;
+    position: fixed;
+    display: inline;
+    border-bottom:3px solid rgba(255, 255, 255, 0.2);
+    width:90%;
+    height: 10%;
+    left:50%;
+    z-index: 99999;
+    transform: translate(-50%, 0%);
+    transition-duration: 0.5s;
 }
+
+#navBar:hover {
+    border-bottom:3px solid white;
+    transition-duration: 0.5s;
+}
+
+.container {
+    vertical-align: middle;
+    max-width:100%;
+    max-height:100%;
+    height: 100%;
+    width: 100%;
+}
+
+/* LOGO */
+#logo {
+    transform: translate(0%, 50%); 
+    display:inline;
+}
+#logoImg {
+    max-width:100%;
+    max-height: 100%;
+}
+
+li#logo {
+    max-width:100%;
+    max-height: 100%;
+}
+
+/*NAVBAR right items */
+
+.nav-right {
+    float: right;
+    display:inline;
+}
+
+a {
+    vertical-align: middle;
+    text-decoration: none;
+    font: 16px/1.5 "Dosis", sans-serif;
+    font-size:2vw;
+    color:white;
+}
+
+/* Discord Image Link */
+#discordImg:hover {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+#discordImg {
+    width:10%;
+    max-width: 10%;
+    max-height: 10%;
+    border-radius: 50%;  
+    -webkit-transition: -webkit-transform .4s ease-in-out;
+    transition: transform .4s ease-in-out;
+}
+
+/* Tutorial Link */
+a#tutorial {
+    font-size: 2em;
+    padding: 3px;
+    text-align: center;
+    text-decoration: none;
+    border-radius:3px;
+    border: 1px solid aliceblue;
+}
+
+
+
+
+/* Main Text Segment */
 h1.text {
     font-size: 2.25vw;
 }
@@ -26,9 +110,8 @@ h1.text {
 p.text {
     font-size: 1vw;
 }
+
 #bodyText {   
-    /*background-color: rgba(0,0,0, 0.3);
-    border: 3px solid #f1f1f1; */
     font: 16px/1.5 "Dosis", sans-serif;
     color: aliceblue;
     font-weight: bold;
@@ -42,70 +125,11 @@ p.text {
     text-align: center;
 }
 
-nav {
-    overflow: hidden;
-    top:0;
-    position: fixed;
-    display: inline;
-    border-bottom:3px solid gray;
-    width:90%;
-    left:50%;
-    z-index: 99999;
-    transform: translate(-50%, 0%);
-    transition-duration: 0.5s;
-}
-#navBar:hover {
-    border-bottom:3px solid white;
-    transition-duration: 0.5s;
-}
-
-a {
-    vertical-align: middle;
-    text-decoration: none;
-    font: 16px/1.5 "Dosis", sans-serif;
-    font-size:2vw;
-    color:white;
-}
-.container {
-    vertical-align: middle;
-}
-#logo {
-    transform: translate(0%, 50%); 
-    display:inline;
-    position: relative;
-    left:0;
-}
-#logoImg {
-    width:16vw;
-}
-ul, li {
-    display: inline;
-    text-align: center;
-    vertical-align: middle;
-}
-
-#discordImg:hover {
-  -webkit-transform: rotate(360deg);
-  transform: rotate(360deg);
-}
-#discordImg {
-    width:3.5vw;
-    height:3.5vw;
-    border-radius: 50%;  
-    -webkit-transition: -webkit-transform .4s ease-in-out;
-    transition: transform .4s ease-in-out;
-}
-#discord {
-    float:right;
-    display:inline;
-    position: relative;
-    transform: translate(0%, 50%);  
-}
-
+/* Learn more and button options */
 #options {
     display:inline;
 }
-
+/* Get Started Button */
 #button {
     font: 16px/1.5 "Dosis", sans-serif;
     font-size:20px;
@@ -124,16 +148,10 @@ ul, li {
     background-color: rgba(251, 20, 56, 1);
     transition-duration: 0.4s;
 }
+
+/* Learm more link */
 a#learn {
     padding-left: 20px;
     font-size:25px;
     text-decoration: underline;
-}
-@keyframes slideInFromLeft {
-    0% {
-    transform: translateX(-50%);
-    }
-    100% {
-    transform: translateX(0);
-    }
 }
