@@ -19,6 +19,12 @@
     border-color: bisque;
     
 }
+
+#active {
+    color:bisque;
+    border-color: bisque;
+}
+
 #background {
     background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3) ), url(../images/background.jpg);
     
@@ -96,7 +102,7 @@ nav img {
 
 section {
     position: absolute;
-    top: 30%;
+    top: 25%;
     flex-direction: column;
     align-items: center;
     text-align: center;
